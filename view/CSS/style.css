@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    color: #0a0a0a;
+    color: #cfc9c9;
 }
 
 /* @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap'); */
@@ -14,7 +14,8 @@
 }
 
 body {
-    background-color: #faff1e;
+    /* background-color: #faff1e; */
+    background-color: #000000;
     width: 100vw;
     height: 100vh;
     display: grid;
@@ -33,7 +34,18 @@ body {
     place-items: center;
 }
 
-.item-a>img {
+.item-a>div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Shantell Sans', cursive;
+    font-family: 'Tilt Neon', cursive;
+    padding: 0.5vw;
+}
+
+.item-a>div>img {
     width: 50%;
     height: 50%;
     font-size: 7vw;
@@ -49,6 +61,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .item-b>h1 {
@@ -89,19 +102,20 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+
 }
 
 .item-d {
     grid-column-start: 1;
     grid-column-end: 3;
-    grid-row-start: -5;
+    grid-row-start: -9;
     grid-row-end: -1;
     /* clip-path: polygon(16% 31%, 0 30%, 0 0, 100% 0, 100% 28%, 83% 28%, 82% 81%, 100% 81%, 100% 100%, 0 100%, 0 78%, 16% 78%); */
     background-image: url("../assets/0cf1345fccb79076947e6ccdf7f74761-removebg-preview.png");
     background-size: contain;
-    background-position: center;
     background-repeat: no-repeat;
     /* border: #0a0a0a solid 0.01vw; */
+    background-position-y: 48vh;
 }
 
 .item-f {
@@ -111,8 +125,9 @@ body {
     grid-row-end: -1;
     background-image: url("../assets/63eb91263b6f97.62810663-removebg-preview.png");
     background-size: contain;
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: calc(100vh/8);
+    background-position-x: 20vh;
 }
 
 .item-e {
@@ -148,7 +163,8 @@ body {
     left: 0;
     right: 100%;
     bottom: 0;
-    background: #000000;
+    background: #ffffff;
+     /* background: #faff1e; */
     height: 0.5vh;
     -webkit-transition-property: right;
     transition-property: right;
