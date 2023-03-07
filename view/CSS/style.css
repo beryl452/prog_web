@@ -23,7 +23,6 @@ body {
     grid-template-rows: repeat(8, calc(100vh/8));
 }
 
-/* grid-area: grid-row-start +  grid-column-start +  grid-row-end +  grid-column-end */
 .item-a {
     grid-column-start: 1;
     grid-column-end: 2;
