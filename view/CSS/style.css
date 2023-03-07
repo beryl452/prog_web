@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    color: #0a0a0a;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap'); */
+
+@font-face {
+    font-family: "Climate";
+    src: url('./font/Climate_Crisis/ClimateCrisis-Regular-VariableFont_YEAR.ttf') format('truetype');
+}
+
+body {
+    background-color: #faff1e;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(8, calc(100vw/8));
+    grid-template-rows: repeat(8, calc(100vh/8));
+}
+
+/* grid-area: grid-row-start +  grid-column-start +  grid-row-end +  grid-column-end */
+.item-a {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: -9;
+    grid-row-end: -8;
+    /* border: #000 solid 2px; */
+    display: grid;
+    place-items: center;
+}
+
+.item-a>img {
+    width: 50%;
+    height: 50%;
+    font-size: 7vw;
+}
+
+.item-b {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: -6;
+    grid-row-end: -4;
+    /* border: #000 solid 2px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-b>h1 {
+    font-family: 'Climate Crisis', "Climate", cursive;
+    font-size: 7vw;
+    /* border: #000 solid 2px; */
+    line-height: 100%;
+}
+
+.item-b>.slogan,
+.item-b>.slogan>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.item-b>.slogan>div {
+    width: 37%;
+    justify-content: space-between;
+}
+
+.item-b>.slogan {
+    font-family: 'Shantell Sans', cursive;
+    font-family: 'Tilt Neon', cursive;
+    /* font-weight: 100; */
+    width: 87%;
+    justify-content: space-between;
+    /* border: #000 solid 2px; */
+}
+
+.item-c {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: -7;
+    grid-row-end: -5;
+    /* clip-path: polygon(16% 31%, 0 30%, 0 0, 100% 0, 100% 28%, 83% 28%, 82% 81%, 100% 81%, 100% 100%, 0 100%, 0 78%, 16% 78%); */
+    background-image: url("../assets/citrus-limon-161548-removebg-preview.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.item-d {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: -5;
+    grid-row-end: -1;
+    /* clip-path: polygon(16% 31%, 0 30%, 0 0, 100% 0, 100% 28%, 83% 28%, 82% 81%, 100% 81%, 100% 100%, 0 100%, 0 78%, 16% 78%); */
+    background-image: url("../assets/0cf1345fccb79076947e6ccdf7f74761-removebg-preview.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* border: #0a0a0a solid 0.01vw; */
+}
+
+.item-f {
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: -7;
+    grid-row-end: -1;
+    background-image: url("../assets/63eb91263b6f97.62810663-removebg-preview.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.item-e {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: -9;
+    grid-row-end: -8;
+    /* border: #0a0a0a solid 0.01vw; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.item-e>.btn>a {
+    font-family: 'Shantell Sans', cursive;
+    font-family: 'Tilt Neon', cursive;
+    /* border: #0a0a0a solid 2px; */
+    padding: 0.5vw;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.item-e>.btn>a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #000000;
+    height: 0.5vh;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.item-e>.btn>a:hover:before,
+.item-e>.btn>a:focus:before,
+.item-e>.btn>a:active:before {
+    right: 0;
+}
