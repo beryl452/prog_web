@@ -144,7 +144,7 @@ body {
     font-family: 'Shantell Sans', cursive;
     font-family: 'Tilt Neon', cursive;
     /* border: #0a0a0a solid 2px; */
-    padding: 0.5vw;
+    padding: 0.2vw;
     text-decoration: none;
     display: inline-block;
     vertical-align: middle;
@@ -162,9 +162,9 @@ body {
     left: 0;
     right: 100%;
     bottom: 0;
-    background: #ffffff;
+    background: #ffffff73;
      /* background: #faff1e; */
-    height: 0.5vh;
+    height: 0.2vh;
     -webkit-transition-property: right;
     transition-property: right;
     -webkit-transition-duration: 0.3s;
@@ -177,4 +177,15 @@ body {
 .item-e>.btn>a:focus:before,
 .item-e>.btn>a:active:before {
     right: 0;
+}
+
+.item-g {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: -4;
+    grid-row-end: -1;
+    font-family: 'Shantell Sans', cursive;
+    font-family: 'Tilt Neon', cursive;
+    display: grid;
+    place-items: center;
 }

@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    background-color: #000;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/RNI-Films-IMG-93150E29-B910-4587-95BD-C359331FD1E1-removebg-preview.png");
+    background-size: calc(100vw/8);
+    /* border: #0a0a0a solid 0.01vw; */
+    background-position-y: 84vh;
+    background-repeat: repeat-x;
+}
+
+main {
+    /* Circle */
+    width: 90vh;
+    height: 90vh;
+    background-color: #fff;
+    /* border: #fff solid 2px; */
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
